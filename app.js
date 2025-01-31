@@ -102,9 +102,9 @@ born in the 1500's.
   */
 // Complete the exercise in the space below:
 
-let veryOldInventors = inventors.filter [(old) => {
-    return  old.year > 1500 && old.year < 1599;
-}];
+let veryOldInventors = inventors.filter ((old) => {
+    return  old = old.year > 1500 && old.year < 1599;
+});
 // Check your work:
 console.log('Exercise 1 my result: ', veryOldInventors);
 console.log('Exercise 1 correct result: ', [
@@ -127,14 +127,14 @@ Hint: Return a new object literal from the callback that looks like:
       { first: "First Name", last: "Last Name" }
 */
 
-let inventorNames = inventors.map[name =>{
-    return first === name.first, last ===  name.last;
+let inventorNames = inventors.map(name =>{
+    return  {first: name.first , last: name.last};
       
-}];
+});
 
 // Complete the exercise in the space below:
 
-// Check your work:
+// Check your work:`
 console.log('Exercise 2 my result: ', inventorNames);
 console.log('Exercise 2 correct result: ', [
   { first: 'Albert', last: 'Einstein' },
@@ -158,9 +158,9 @@ Sort the inventors by birth date in ascending order (from those born furthest in
 the past to those born most recently).
 */
 
-let sortedByBirthYear = inventors.sort[(a,b) =>{
+let sortedByBirthYear = inventors.sort((a,b) =>{
     return a.year - b.year;
-}];
+});
 
 // Complete the exercise in the space below:
 
